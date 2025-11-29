@@ -16,7 +16,7 @@ pipeline
             steps
             {
                 echo "Configuring the file"
-                sh javac one.java
+                sh "javac one.java"
             }
         }
         stage('run')
@@ -24,7 +24,7 @@ pipeline
             steps
             {
                 echo "Running the file"
-                sh java one
+                sh "java one"
             }
         }
     }
